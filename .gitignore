@@ -28,6 +28,3 @@ install_manifest.txt
 *~
 .DS_Store
 Thumbs.db
-
-# Claude Code internals
-.claude/
