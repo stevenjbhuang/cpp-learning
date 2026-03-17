@@ -1,0 +1,2 @@
+add_executable(25_advanced_coroutines main.cpp)
+target_link_libraries(25_advanced_coroutines PRIVATE Threads::Threads)

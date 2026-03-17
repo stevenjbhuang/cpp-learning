@@ -1,0 +1,1 @@
+add_executable(21_memory_and_allocators main.cpp)

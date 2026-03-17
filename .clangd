@@ -1,0 +1,37 @@
+CompileFlags:
+  CompilationDatabase: build/
+  Add:
+    - -std=c++23
+    - -Wall
+    - -Wextra
+    - -fcolor-diagnostics
+
+Index:
+  Background: Build
+  StandardLibrary: Yes
+
+Diagnostics:
+  UnusedIncludes: Strict
+  MissingIncludes: Strict
+  ClangTidy:
+    Add:
+      - modernize-*
+      - performance-*
+      - readability-*
+      - cppcoreguidelines-*
+      - bugprone-*
+    Remove:
+      - modernize-use-trailing-return-type
+      - cppcoreguidelines-avoid-magic-numbers
+      - readability-magic-numbers
+      - cppcoreguidelines-pro-bounds-pointer-arithmetic
+      - cppcoreguidelines-pro-type-reinterpret-cast
+
+InlayHints:
+  Enabled: true
+  ParameterNames: true
+  DeducedTypes: true
+  Designators: true
+
+Hover:
+  ShowAKA: true
