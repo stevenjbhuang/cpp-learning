@@ -1,0 +1,2 @@
+add_executable(20_lock_free_programming main.cpp)
+target_link_libraries(20_lock_free_programming PRIVATE Threads::Threads)

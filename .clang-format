@@ -1,0 +1,65 @@
+---
+Language:        Cpp
+BasedOnStyle:    Google
+Standard:        c++23
+
+IndentWidth:     4
+TabWidth:        4
+UseTab:          Never
+ColumnLimit:     100
+
+AccessModifierOffset:              -4
+AlignAfterOpenBracket:             Align
+AlignConsecutiveAssignments:       None
+AlignConsecutiveDeclarations:      None
+AlignConsecutiveMacros:            AcrossEmptyLines
+AlignOperands:                     Align
+AlignTrailingComments:
+  Kind:           Always
+  OverEmptyLines: 1
+
+AllowShortBlocksOnASingleLine:     Empty
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortFunctionsOnASingleLine:  Inline
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine:    All
+AllowShortLoopsOnASingleLine:      false
+
+BinPackArguments:  false
+BinPackParameters: false
+
+BreakBeforeBraces:            Attach
+BreakConstructorInitializers: BeforeColon
+BreakInheritanceList:         BeforeColon
+BreakTemplateDeclarations:    Yes
+
+ConstructorInitializerIndentWidth: 4
+ContinuationIndentWidth:           4
+
+DerivePointerAlignment: false
+PointerAlignment:       Left
+ReferenceAlignment:     Left
+
+IncludeBlocks: Regroup
+IncludeCategories:
+  - Regex:    '^<[a-z_]+>$'       # C++ standard headers (no extension)
+    Priority: 1
+  - Regex:    '^<.*\.h>$'          # C standard headers
+    Priority: 2
+  - Regex:    '^<.*>'              # Other system headers
+    Priority: 3
+  - Regex:    '.*'                 # Project headers
+    Priority: 4
+SortIncludes:         CaseSensitive
+SortUsingDeclarations: true
+
+Cpp11BracedListStyle:        true
+SpaceAfterCStyleCast:        false
+SpaceAfterTemplateKeyword:   true
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeParens:           ControlStatements
+SpacesInAngles:              Never
+SpacesInParentheses:         false
+
+ReflowComments: true
+...
